@@ -1,0 +1,48 @@
+.stats-sheet {
+  display: flex;
+  flex-direction: column;
+  padding: 0 130px;
+  max-height: 80%;
+  overflow: auto;
+
+  table {
+    thead {
+      th {
+        height: 48px;
+
+        background: #3a80ba;
+        border-right: 1px solid #ffffff;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: normal;
+        padding: 0 20px;
+        &:first-child {
+          border-radius: 8px 0 0 0;
+        }
+        &:last-child {
+          border: none;
+
+          border-radius: 0 8px 0 0;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        background: #fbfbfb;
+        height: 32px;
+        cursor: pointer;
+
+        &:nth-child(even) {
+          background: #f1f1f1;
+        }
+        td {
+          text-align: center;
+          font-size: 16px;
+          font-weight: normal;
+          color: #1a1a1a;
+        }
+      }
+    }
+  }
+}

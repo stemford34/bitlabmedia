@@ -1,0 +1,355 @@
+.purpose {
+  height: 900px;
+  background: url(../../assets/img/purposeBackground.svg) no-repeat;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+
+  .logo {
+    margin-left: 130px;
+  }
+
+  > div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    > div {
+      margin: 55px 0 0 130px;
+      width: 55%;
+    }
+  }
+
+  &__text {
+    font-size: 48px;
+    color: #ffffff;
+  }
+
+  p {
+    font-size: 20px;
+    color: #ffffff;
+    margin: 40px 0;
+  }
+
+  &__btn {
+    width: 180px;
+  }
+
+  .iphone {
+    height: 600px;
+    background: url(../../assets/img/mobile.svg) no-repeat;
+  }
+}
+
+.reason {
+  padding-top: 50px;
+
+  &__text {
+    font-size: 32px;
+    text-align: center;
+
+    color: #1a1a1a;
+    p {
+      font-size: 20px;
+      text-align: center;
+      color: #7e7e7e;
+    }
+  }
+
+  &__tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    &--tab {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        margin: 48px 0 40px 0;
+      }
+      margin: 10px;
+    }
+  }
+}
+
+.learn-more {
+  height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 90px 0;
+  background: linear-gradient(93.19deg, #255d8b 2.29%, #3a80ba 96.79%);
+  > div {
+    position: relative;
+    width: 40%;
+    // padding: 0 0 0 130px;
+  }
+  b {
+    font-weight: bold;
+    font-size: 32px;
+    color: #ffffff;
+  }
+
+  p {
+    padding: 20px 0 20px 0;
+    font-size: 16px;
+    color: #ffffff;
+  }
+
+  &__btn {
+    width: 260px;
+  }
+
+  .macbook {
+    position: absolute;
+    bottom: -194px;
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+.packages {
+  &__info {
+    font-size: 32px;
+    text-align: center;
+
+    color: #1a1a1a;
+    p {
+      font-size: 20px;
+      text-align: center;
+      color: #7e7e7e;
+    }
+  }
+
+  &__tabs {
+    display: flex;
+    justify-content: center;
+    &--tab {
+      margin: 10px;
+
+      .price {
+        font-weight: bold;
+        font-size: 48px;
+        text-align: center;
+        color: #1a1a1a;
+        margin: 20px 0;
+        &--blue {
+          color: #3a80ba;
+        }
+      }
+      .line {
+        width: 222px;
+        height: 1px;
+        background: radial-gradient(#1a1a1a, #ffffff);
+      }
+      p {
+        width: 222px;
+      }
+    }
+  }
+
+  &__btn {
+    width: 220px;
+
+    color: #ffffff;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .reason {
+    &__tabs {
+      &--tab {
+        p {
+          width: 230px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .purpose {
+    height: 800px;
+    .logo {
+      margin-left: 90px;
+    }
+
+    > div {
+      > div {
+        margin: 28px 0 0 90px;
+        width: 80%;
+      }
+    }
+  }
+
+  .reason {
+    &__tabs {
+      &--tab {
+        p {
+          width: 180px;
+        }
+      }
+    }
+  }
+  .learn-more {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 850px;
+    > div {
+      width: 70%;
+    }
+    .macbook {
+      position: absolute;
+      bottom: -151px;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .purpose {
+    height: 1200px;
+    .logo {
+      margin-left: 90px;
+    }
+
+    > div {
+      justify-content: space-between;
+      flex-direction: column;
+      > div {
+        margin: 28px 90px;
+      }
+    }
+
+    .iphone {
+      background-position: center;
+    }
+  }
+
+  .reason {
+    padding-top: 50px;
+
+    &__tabs {
+      flex-direction: column;
+      align-items: center;
+
+      &--tab {
+        p {
+          width: 316px;
+        }
+      }
+    }
+  }
+
+  .packages {
+    &__tabs {
+      &--tab {
+        p {
+          width: 160px;
+        }
+      }
+    }
+  }
+}
+
+.contact {
+  text-align: center;
+  margin: 40px 0;
+  p {
+    font-size: 20px;
+  }
+  a {
+    font-size: 20px;
+    font-weight: 700;
+    color: #3a80ba;
+    text-decoration: none;
+  }
+}
+
+.bottom {
+  background: url(../../assets/img/footer.svg) no-repeat;
+  background-size: cover;
+
+  > div {
+    display: flex;
+    justify-content: space-around;
+
+    p {
+      margin: 35px;
+      text-align: center;
+      color: #ffffff;
+    }
+  }
+
+  .subscribe {
+    display: flex;
+    justify-content: space-between;
+    background: #ffffff;
+    border: 1px solid #f1f1f1;
+    border-radius: 10px;
+    margin-top: 30px;
+    padding: 5px;
+    width: 579px;
+
+    input {
+      border: none;
+      background-color: none;
+      font-size: 16px;
+      color: #b9b9b9;
+      margin-left: 15px;
+
+      &:focus {
+        border: none;
+      }
+    }
+
+    > div {
+      width: 176px;
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .packages {
+    &__tabs {
+      flex-direction: column;
+      align-items: center;
+      &--tab {
+        width: 380px;
+        p {
+          width: 222px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .purpose {
+    height: 1250px;
+    .logo {
+      margin-left: 60px;
+    }
+
+    > div {
+      > div {
+        margin: 28px 60px;
+        width: 80%;
+      }
+    }
+  }
+
+  .learn-more {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 750px;
+    > div {
+      width: 70%;
+    }
+    .macbook {
+      position: absolute;
+      bottom: -111px;
+    }
+  }
+}

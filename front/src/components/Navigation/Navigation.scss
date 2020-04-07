@@ -1,0 +1,20 @@
+.navigation {
+  ul {
+    display: flex;
+    padding: 0 130px;
+    li {
+      font-size: 16px;
+      color: #cccccc;
+      margin-right: 6px;
+
+      &:last-child {
+        color: #3a80ba;
+      }
+      img {
+        transform: rotate(180deg);
+
+        height: 10px;
+      }
+    }
+  }
+}
